@@ -1,0 +1,14 @@
+import type { User } from "@supabase/supabase-js";
+
+interface UserMapper {
+  id: string;
+  fullName: string | null;
+  isAdmin: boolean;
+}
+
+interface LoggedInUserMapper {
+  last_sign_in_at?: string;
+  authenticated: boolean;
+  email?: string;
+  id: string;
+}
